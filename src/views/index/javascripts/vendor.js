@@ -1,4 +1,2 @@
 
-require('./modules/a')
-
-console.log('vendor.js')
+require('./modules/TAB.js')

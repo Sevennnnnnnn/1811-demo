@@ -119,7 +119,7 @@ gulp.task('inject', function () {
             target.pipe(inject(sources, { ignorePath: '/dist' }))
               .pipe(gulp.dest('./dist/'+page+''));
         })
-    }, 1000);  
+    }, 2000);  
 });
 
 
