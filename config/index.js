@@ -30,6 +30,12 @@ const config = {
                 './src/stylesheets/reset.scss',
                 './src/views/list/*/*.scss'
             ]
+        },
+        'car': {
+            'car': [
+                './src/stylesheets/reset.scss',
+                './src/views/car/*/*.scss'
+            ]
         }
     },
     jsoptions: {// js配置
@@ -37,7 +43,8 @@ const config = {
             index: './src/views/index/javascripts/index.js',
             vendor: './src/views/index/javascripts/vendor.js'
         },
-        'list': './src/views/list/javascripts/list.js'
+        'list': './src/views/list/javascripts/list.js',
+        'car': './src/views/car/javascripts/car.js'
     }
 }
 

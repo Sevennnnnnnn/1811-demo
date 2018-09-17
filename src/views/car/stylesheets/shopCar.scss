@@ -1,0 +1,224 @@
+body,div,ul,li,p,span,img{
+    margin: 0;
+    padding: 0;
+}
+.contenter{
+    width: 100%;
+    overflow: hidden;
+}
+.contenter .content{
+    width:1200px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.contenter .content .top{
+    margin-top: 30px;
+    width: 1200px;
+    height: 60px;
+    display: flex;
+    justify-content: start;
+}
+.contenter .content .top p{
+    font-size: 15px;
+    color: #838383;
+    margin-top: 30px;
+    margin-left: 5px;
+    margin-right: 80px;
+}
+.contenter .content .top div{
+    width: 160px;
+    height: 30px;
+    color: #323232;
+    background: #e5e5e5;
+    margin-right: 5px;
+    text-align: center;
+    line-height: 30px;
+}
+.contenter .content .top .active{
+    width: 160px;
+    height: 30px;
+    color: #ffffff;
+    background: #cd062f;
+    margin-right: 5px;
+    text-align: center;
+    line-height: 30px;
+}
+.contenter .content .cent{
+    width: 425px;
+    height: 20px;
+    border: 1px solid #dddddd;
+    text-indent: 5px;
+    line-height: 20px;
+    font-size: 12px;
+    color: #000000;
+    margin-top: 17px;
+}
+.contenter .content .bot{
+    width: 1198px;
+    border: 1px solid #dddddd;
+    overflow: hidden;
+    margin-top: 7px;
+    margin-bottom: 30px;
+}
+.contenter .content .bot ul{
+    height: 35px;
+    background: #d7d7d7;
+}
+.contenter .content .bot ul li{
+    list-style: none;
+    float: left;
+    height: 20px;
+    text-align: center;
+    border-right: 1px solid #e7e7e7;
+    margin-top: 8px;
+}
+.contenter .content .bot ul li:nth-of-type(1){
+    width: 108px;
+}
+.contenter .content .bot ul li:nth-of-type(2){
+    width: 380px;
+}
+.contenter .content .bot ul li:nth-of-type(3){
+    width: 130px;
+}
+.contenter .content .bot ul li:nth-of-type(4){
+    width: 130px;
+}
+.contenter .content .bot ul li:nth-of-type(5){
+    width: 130px;
+}
+.contenter .content .bot ul li:nth-of-type(6){
+    width: 130px;
+}
+.contenter .content .bot ul li:nth-of-type(7){
+    border-right: 0;
+}
+.contenter .content .bot .tip{
+    width:470px;
+    height: 90px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: start;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.contenter .content .bot .tip p{
+    margin-top: 30px;
+    font-size: 15px;
+    color: #6388a5;
+    margin-left: 20px;
+}
+.contenter .content .bot .tip a{
+    color: #c80a28;
+    font-size: 12px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.contenter .content .hr{
+    border-top: 1px solid #dddddd;
+    margin-bottom: 30px;
+    width: 1200px;
+    height: 1px;
+}
+.contenter .content .cent a{
+    color: #fe0032;
+    text-decoration: none;
+}
+.contenter .content .cent a:hover{
+    color: #fe0032;
+    text-decoration:underline;
+}
+.contenter .content .show .show-top{
+    width: 1198px;
+    height: 38px;
+    background: #d7d7d7; 
+    display: flex;
+    justify-content: space-between;  
+    margin-bottom: 20px; 
+}
+.contenter .content .show .show-top p{
+    color: #010004;
+    font-size: 16px;
+    height: 38px;
+    line-height: 38px;
+    margin-left: 15px;
+}
+.contenter .content .show .show-top div{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 5px;
+}
+.contenter .content .show .show-top div p:nth-of-type(1){
+    font-size: 12px;
+    color: #8c8e89;
+    text-align: center;
+    line-height: 25px;
+    height: 25px;
+    margin-top: 5px;
+    width: 140px;
+    height: 25px;
+    background: #ffffff;
+}
+.contenter .content .show .show-top div p:nth-of-type(2){
+    font-size: 12px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 25px;
+    height: 25px;
+    margin-top: 5px;
+    width: 140px;
+    height: 25px;
+    background: #8a8a8a;
+}
+.contenter .content .show-pic{
+    position: relative;
+    width: 1200px;
+    overflow: hidden;
+}
+.contenter .content .show{
+    width: 1198px;
+    height: 300px;
+    border: 1px solid #dddddd;
+}
+.contenter .content .show-pic .pic1{
+    position: absolute;
+    top: 90px;
+    cursor: pointer;
+}
+.contenter .content .show-pic .pic2{
+    position: absolute;
+    top: 90px;
+    cursor: pointer;
+}
+.contenter .content .show-pic .new-pic{
+    margin-left: 40px;
+}
+.contenter .content .new-pic li p{
+    margin-top:16px;
+}
+.contenter .content  .new-pic li{
+    float: left;
+    width: 178px;
+    height: 274px;
+    list-style: none;
+    margin-right:7px;
+}
+.contenter .content  .new-pic li img{
+    height: 178px;
+    width: 178px;
+}
+.contenter .content  .new-pic li p{
+    clear: both;
+    margin-top:16px;
+    text-align: center;
+    width: 230px;
+}
+.contenter .content  .new-pic li p span{
+    font-size: 15px;
+    color: #2f4241;
+    margin-right: 2px;
+}
+.contenter .content  .new-pic li p del{
+    font-size: 9px;
+    color: #688793; 
+}
