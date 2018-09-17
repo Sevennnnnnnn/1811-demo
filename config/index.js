@@ -13,7 +13,7 @@ const config = {
     serveroptions: {// 热更新服务
         root: './dist',
         port: 8888,
-        livereload: true 
+        livereload: true  
     },
     pages: [ 'index', 'list', 'car','register','login','cabinet' ],
     cssoptions: {// css配置

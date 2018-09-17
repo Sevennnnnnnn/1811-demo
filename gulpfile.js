@@ -20,8 +20,8 @@ const inject = require('gulp-inject')
 const sass = require('gulp-sass')
 gulp.task('handle:html', function () {
     return gulp.src('./src/views/*/*.html')
-        .pipe(htmlmin(config.htmloptions))
-        .pipe(gulp.dest('./dist'))
+        // .pipe(htmlmin(config.htmloptions))
+        .pipe(gulp.dest('./dist/html'))
 })
 gulp.task('handle:css', function () {
     // 1. 希望可以合并成多个css，更灵活  2. 多页面灵活处理
@@ -110,16 +110,19 @@ gulp.task('handle:js', function () {
 
 //专门给各个页面的html文件添加对应的依赖
 gulp.task('inject', function () {
-    setTimeout(() => {
-        config.pages.forEach(page => {
-            var target = gulp.src('./dist/'+page+'/'+page+'.html');
+        console.log(config.pages)
+        let streams = config.pages.map(page => {
+            var target = gulp.src('./dist/html/'+page+'/'+page+'.html');
             // It's not necessary to read the files (will speed up things), we're only after their paths:
             var sources = gulp.src(['./dist/'+page+'/js/*.js', './dist/'+page+'/css/*.css'], {read: false});
-           
-            target.pipe(inject(sources, { ignorePath: '/dist' }))
-              .pipe(gulp.dest('./dist/'+page+''));
+            console.log(target)
+            return target.pipe(inject(sources, { ignorePath: '/dist' }))
+            .pipe(gulp.dest('./dist/'+page));
+            
         })
-    }, 2000);  
+
+        return merge(...streams)
+    
 });
 
 
