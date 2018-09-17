@@ -1,0 +1,86 @@
+div,body,p,img{
+    margin: 0;
+    padding: 0;
+}
+.contenter{
+    width:100%;
+    height: 186px;
+    background: #f0f0f0;
+    margin-top: 10px;
+}
+.contenter .content{
+    width: 1200px;
+    height: 186px;
+    margin: 0 auto;
+}
+.contenter .content .top{
+    width: 1200px;
+    height: 186px;
+}
+.contenter .content .top img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.banner{
+    width: 100%;
+    overflow: hidden;
+}
+.huodong{
+    width: 100%;
+    overflow: hidden;
+}
+.huodong .huo{
+    width:1200px;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-left: 150px;
+}
+.huodong .cent{
+    width: 890px;
+    height: 189px;
+    margin: 0 auto;
+}
+.huodong .cent img{
+    width: 100%;
+    height: 100%;
+}
+.list{
+    width: 100%;
+    overflow: hidden;
+    margin-top: 10px;
+}
+ .new-pic{
+    width: 980px;
+    margin: 0 auto;
+    padding-left: 50px;
+}
+.new-pic li p{
+    margin-top:16px;
+}
+.new-pic li{
+    float: left;
+    width: 178px;
+    /* height: 274px; */
+    list-style: none;
+    margin-right:7px;
+}
+.new-pic li img{
+    height: 178px;
+    width: 178px;
+}
+.new-pic li p{
+    clear: both;
+    margin-top:16px;
+    text-align: center;
+    width: 230px;
+}
+.new-pic li p span{
+    font-size: 15px;
+    color: #2f4241;
+    margin-right: 2px;
+}
+.new-pic li p del{
+    font-size: 9px;
+    color: #688793; 
+}

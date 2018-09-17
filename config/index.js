@@ -15,7 +15,7 @@ const config = {
         port: 8888,
         livereload: true 
     },
-    pages: [ 'index', 'list', 'car','register' ],
+    pages: [ 'index', 'list', 'car','register','login','cabinet' ],
     cssoptions: {// css配置
         'index': { // index页面的css
             'common': [ // index页面处理之后的common.min.css需要合并的文件
@@ -42,6 +42,18 @@ const config = {
                 './src/stylesheets/reset.scss',
                 './src/views/register/*/*.scss'
             ]
+        },
+        'login': {
+            'login': [
+                './src/stylesheets/reset.scss',
+                './src/views/login/*/*.scss'
+            ]
+        },
+        'cabinet': {
+            'cabinet': [
+                './src/stylesheets/reset.scss',
+                './src/views/cabinet/*/*.scss'
+            ]
         }
     },
     jsoptions: {// js配置
@@ -51,7 +63,9 @@ const config = {
         },
         'list': './src/views/list/javascripts/list.js',
         'car': './src/views/car/javascripts/car.js',
-        'register': './src/views/register/javascripts/register.js'        
+        'register': './src/views/register/javascripts/register.js',
+        'login': './src/views/login/javascripts/login.js',
+        'cabinet': './src/views/cabinet/javascripts/cabinet.js'    
     }
 }
 

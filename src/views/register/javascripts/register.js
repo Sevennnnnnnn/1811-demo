@@ -1,23 +1,24 @@
+// 主页选项卡
+$(function(){   
+    $(".show-title>li").mouseenter(function(){
+        $(this).addClass("show-title-active").siblings().removeClass("show-title-active");
+        $(".show-content").eq($(this).index()).css({
+            display:"block"
+        }).siblings().css({
+            display:"none"
+        })
+    })
+})
+
+
+//注册选项卡
 $(function(){
-    var obtn=document.getElementById("btn");
-        var oUsr=document.getElementById("usr");
-        var oPwd=document.getElementById("pwd");
-        obtn.onclick=function(){
-            var sUsr=oUsr.value;
-            var sPwd=oPwd.value;
-            ajaxPost("php/register.php",`usr=${sUsr}&pwd=${sPwd}`)
-            .then(function(res){
-                var success=true;
-                console.log(res);
-                try{
-                    JSON.parse(res);
-                }catch(error){
-                    console.log(error);
-                    success=false;
-                }
-                if(success){
-                    location.href="login";
-                }
-            })
-        }
+    $(".xuanxiang").children().click(function(){
+        $(this).addClass("phone").siblings().removeClass("phone");
+        $(".c-r-bot").children().eq($(this).index()).css({
+            display:"block"
+        }).siblings().css({
+            display:"none"
+        })
+    })
 })
