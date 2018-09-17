@@ -1,0 +1,247 @@
+body,div,p,input,button,img,a,span{
+    margin: 0;
+    padding: 0;
+} 
+.contenter{
+    width: 100%;
+    overflow: hidden;
+}
+.contenter .content{
+    width: 1200px;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+.contenter .content .con-left{
+    float: left;
+    border-right: 1px dashed #dddddd;
+    width: 490px;
+    height: 500px;
+}
+.contenter .content .con-left form span{
+    font-size: 12px;
+    color: #040100;
+    margin-top: 27px;
+    margin-left: 40px;
+}
+.contenter .content .con-left form .left-btn{
+    width: 105px;
+    height: 30px;
+    background: #b77136;
+    border: 0;
+    border-radius: 5px;
+    margin-left: 15px;
+    margin-top: 18px;
+    cursor: pointer;
+}
+.contenter .content .con-right{
+    float: left;
+    overflow: hidden;
+    width: 610px;
+    margin-left: 50px;
+    margin-top: 8px;
+}
+.contenter .content .con-left img{
+    margin-left: 30px;
+}
+.sell{
+    margin-left: 40px;
+    margin-top: 50px;
+}
+ form .buy{
+    width: 250px;
+    height: 25px;
+    outline: none;
+}
+ form .buy-btn{
+    margin-left:10px; 
+    width: 70px;
+    height: 22px;
+    border-radius:5px;
+    border: 0;
+    background: #c40001;
+    color: #ffffff;
+    cursor: pointer;
+}
+.contenter .content .con-right .c-r-top{
+    height: 120px;
+    border-bottom: 1px dashed #dddddd;
+    width: 610px;
+    display: flex;
+    justify-content: start;
+}
+.contenter .content .con-right .circle{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #e22136;
+    color: #ffffff;
+    line-height: 20px;
+    text-align: center;
+} 
+.contenter .content .con-right .c-r-top .circle{
+    margin-top: 8px;
+}
+.contenter .content .con-right .tip{
+    font-size: 12px;
+    color: #160000;
+    margin-left: 8px;
+    margin-right: 16px;
+    margin-top: 8px;
+}
+.contenter .content .con-right .xuanxiang .phone{
+    width: 135px;
+    height: 35px;
+    background: #af072b;
+    color: #ffffff;
+    line-height: 35px;
+    text-align: center;
+    font-size: 15px;
+    border-radius: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.contenter .content .con-right .xuanxiang div{
+    width: 135px;
+    height: 35px;
+    background:#e4e2e3;
+    color: #304036;
+    line-height: 35px;
+    text-align: center;
+    font-size: 15px;
+    border-radius: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.contenter .content .con-right .c-r-bot{
+    position: relative;
+}
+.contenter .content .con-right .c-r-bot .bot-title{
+    display: flex;
+    justify-content: start;
+    margin-top: 33px;
+}
+.contenter .content .con-right .c-r-bot .bot-title .tip1{
+    font-size: 12px;
+    color: #160000;
+    margin-left: 8px;
+}
+.contenter .content .con-right .c-r-bot .phone-reg label{
+    font-size: 12px;
+    color: #38454d;
+}
+.contenter .content .con-right .c-r-bot .phone-reg label:nth-of-type(1){
+    margin-left: 43px;
+    margin-top: 30px;
+}
+.contenter .content .con-right .c-r-bot .phone-reg label:nth-of-type(2){
+    margin-left: 115px;
+    height: 16px;
+    margin-top: 10px;
+    display: block;
+}
+.contenter .content .con-right .c-r-bot .phone-reg label:nth-of-type(3){
+    margin-left: 68px;
+}
+.contenter .content .con-right .c-r-bot .phone-reg label:nth-of-type(4){
+    margin-left: 78px;
+}
+.contenter .content .con-right .c-r-bot .phone-reg label:nth-of-type(5){
+    margin-left: 115px;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: -30px;
+}
+.contenter .content .con-right .c-r-bot .phone-reg label:nth-of-type(6){
+    margin-left: 54px;
+}
+.contenter .content .con-right .c-r-bot input{
+    width: 205px;
+    height: 30px;
+    outline: none;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    text-indent: 5px;
+    margin-top: 10px;
+    background: #f6f6f6;
+}
+.contenter .content .con-right .c-r-bot a{
+    text-decoration: none;
+    color: #b40300;
+}
+.contenter .content .con-right .c-r-bot .check{
+    margin-left: 115px;
+    width: 10px;
+    height: 10px;
+}
+.contenter .content .con-right .c-r-bot .register-btn{
+    width: 170px;
+    height: 42px;
+    background: #b80928;
+    line-height: 42px;
+    text-align: center;
+    color: #ffffff;
+    border: 0;
+    margin-left: 120px;
+    margin-top: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
+.contenter .content .con-right .c-r-bot .phone-reg .sent{
+    width: 115px;
+    height: 25px;
+    border-radius: 5px;
+    line-height: 25px;
+    text-align: center;
+}
+.contenter .content .con-right .c-r-bot .email-reg{
+    /* position:absolute; */
+    /* top: -33px; */
+    display:none;
+}
+.contenter .content .con-right .c-r-bot .email-reg label{
+    font-size: 12px;
+    color: #38454d;
+}
+.contenter .content .con-right .c-r-top .xuanxiang{
+    width: 300px;
+}
+.contenter .content .con-right .c-r-top .xuanxiang div{
+    float: left;
+}
+.contenter .content .con-right .c-r-bot .email-reg label:nth-of-type(1){
+    margin-left: 118px;
+}
+.contenter .content .con-right .c-r-bot .email-reg label:nth-of-type(2){
+    margin-left: 160px;
+}
+.contenter .content .con-right .c-r-bot .email-reg label:nth-of-type(3){
+    margin-left: 125px;
+}
+.contenter .content .con-right .c-r-bot .email-reg label:nth-of-type(4){
+    margin-left: 160px;
+}
+.contenter .content .con-right .c-r-bot .email-reg label:nth-of-type(5){
+    margin-left: 100px;
+}
+.contenter .content .con-right .c-r-bot .email-reg label:nth-of-type(6){
+    margin-left: 160px;
+}
+.contenter .content .con-right .c-r-bot .email-reg label:nth-of-type(7){
+    margin-left: 112px;
+}
+.contenter .content .con-right .c-r-bot .email-reg .check{
+    margin-left: 160px;
+}
+.contenter .content .con-right .c-r-bot .email-reg span{
+    display: inline-block;
+    width: 88px;
+    height: 30px;
+    position: absolute;
+    bottom: 88px;
+}
+.contenter .content .con-right .c-r-bot .email-reg span img{
+    width: 100%;
+    height: 100%;
+}

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>详情</title>
+    <title>注册</title>
     <!-- inject:css -->
     <!-- endinject -->
 </head>
@@ -230,53 +230,72 @@
             </ul>
         </div>
     </div>
-    <div class="big">
-        <div class="detail">
-            <div class="left">
-                <div class="smallimg">
-                    <img src="http://s.handu.com/images/201804/thumb_img/1524118312752755988.jpg" alt="">
-                    <img src="http://s.handu.com/images/201804/thumb_img/1524118313248493224.jpg" alt="">
-                    <img src="http://s.handu.com/images/201804/thumb_img/1524118313763198909.jpg" alt="">
-                    <img src="http://s.handu.com/images/201804/thumb_img/1524118314224943069.jpg" alt="">
-                    <img src="http://s.handu.com/images/201804/thumb_img/1524118314569741956.jpg" alt="">
-                    <div class="cover"></div>
+    <div class="contenter">
+        <div class="content">
+            <div class="con-left">
+                <form action="login.html">
+                    <span>已是韩都衣舍用户：</span>
+                    <button class="left-btn">直接登录</button>
+                </form>
+                <img src="http://img01.handu.com/hdysweb/20141129/367-250.png" width="367" height="250" alt="2012-2014上半年度全网销量第一女装品牌" title="2012-2014上半年度全网销量第一女装品牌">
+                <form action="javascript:void(0)" class="sell">
+                    <input type="text" id="buy" class="buy">
+                    <button class="buy-btn" id="buy-btn">马上订阅</button>
+                </form>
+            </div>
+            <div class="con-right">
+                <div class="c-r-top">
+                    <div class="circle">1</div>
+                    <div class="tip">选择注册方式：</div>
+                    <div class="xuanxiang">
+                        <div class="phone">使用手机注册</div>
+                        <div class="email">使用邮箱注册</div>
+                    </div>                   
                 </div>
-                <div class="check">
-                    <img src="http://s.handu.com/images/201804/thumb_img/1524118312752755988.jpg" alt="">
-                    <img src="http://s.handu.com/images/201804/thumb_img/1524118313248493224.jpg" alt="">
-                    <img src="http://s.handu.com/images/201804/thumb_img/1524118313763198909.jpg" alt="">
-                    <img src="http://s.handu.com/images/201804/thumb_img/1524118314224943069.jpg" alt="">
-                    <img src="http://s.handu.com/images/201804/thumb_img/1524118314569741956.jpg" alt="">
+                <div class="c-r-bot">
+                    <form action="javascript:void(0)" class="phone-reg">
+                        <div class="bot-title">
+                            <div class="circle">2</div>
+                            <p class="tip1">填写您的信息：</p>
+                        </div>                       
+                        <label for="phonenum">您的手机号：</label>
+                        <input type="text" id="usr" class="phonenum">
+                        <input type="button" class="sent" value="发送验证码">
+                        <br><label>请输入您在注册时使用的手机号码,若当前号码不用/丢失，或无法收到验证码?<a href="#">其他验证方式</a></label>
+                        <br><label for="validate">验证码：</label>
+                        <input type="text" id="validate" class="validate">
+                        <br><label for="pwd">密码：</label>
+                        <input type="text" class="pwd" id="pwd">
+                        <br><label>6-16位字符，可使用字母、数字或符号的组合</label>
+                        <br><label for="sure">确认密码：</label>
+                        <input type="text" class="sure" id="sure">
+                        <br><input type="checkbox" id="check" class="check">
+                        <label for="check">我已看过并接受<a href="#">《用户协议》</a></label>
+                        <br><button class="register-btn" id="btn">同意协议并注册</button>
+                    </form>
+                    <form action="javascript:void(0)" class="email-reg">
+                        <div class="bot-title">
+                            <div class="circle">2</div>
+                            <p class="tip1">填写您的信息：</p>
+                        </div>                       
+                        <label for="phonenum">Email：</label>
+                        <input type="text" id="phonenum" class="phonenum">
+                        <br><label>Email地址作为用户名，同时也用于接收账户信息、订单通知及密码找回等功能</label>
+                        <br><label for="pwd">密码：</label>
+                        <input type="text" class="pwd" id="pwd">
+                        <br><label>8-24位字符，必须包含字母、数字的组合</label>
+                        <br><label for="sure">确认密码：</label>
+                        <input type="text" class="sure" id="sure">
+                        <br><label>请再次输入密码，两次输入必须一致</label>
+                        <br><label for="validate">验证码：</label>
+                        <input type="text" id="validate" class="validate">
+                        <span><img src="../images/valide.jpg" alt=""></span>
+                        <br><input type="checkbox" id="check" class="check">
+                        <label for="check">我已看过并接受<a href="#">《用户协议》</a></label>
+                        <br><button class="register-btn" id="register-btn">同意协议并注册</button>
+                    </form>
                 </div>
-                <div class="bigimg">
-                    <img src="http://s.handu.com/images/201804/thumb_img/1524118314569741956.jpg" alt="">
-                    <img src="http://s.handu.com/images/201804/thumb_img/1524118314224943069.jpg" alt="">
-                    <img src="http://s.handu.com/images/201804/thumb_img/1524118313763198909.jpg" alt="">
-                    <img src="http://s.handu.com/images/201804/thumb_img/1524118313248493224.jpg" alt="">
-                    <img src="http://s.handu.com/images/201804/thumb_img/1524118312752755988.jpg" alt="">    
-                </div>  
-            </div> 
-            <div class="right">
-                <p class="title">娜娜日记2018夏装新款女装chic上衣白色刺绣短袖T恤女黑色打底衫</p>
-                <a href="#">【夏季新风尚】全场通用满199减20/满299减50/满399减80/满599减130！</a>
-                <ul class="one">
-                    <li><span>商品货号：</span><span>NL8562</span><span>售价：</span><span>￥</span><del>128.00</del></li>
-                    <li><span>促销价:</span><span>￥68.00</span></li>
-                    <li><span>销量：</span><span>24件</span></li>
-                    <li><span>用户评分:</span><span><img src="../images/star.jpg" alt=""></span><span class="num">(共有0条评论)</span></li>
-                </ul>
-                <ul class="two">
-                    <li>尺码：<span>XS</span><span>S</span><span>M</span><span>L</span></li>
-                    <li>颜色：<span>白色</span><span>黑色</span></li>
-                    <li>数量：<span>-</span><input type="text" id="number" class="number"><span>+</span><span>(库存11件)</span></li>
-                </ul>
-                <p class="select">你已选择了&nbsp;&nbsp;</p>
-                <div class="btn">
-                    <div class="buy">立即购买</div>
-                    <div class="add">加入购物车</div>
-                </div>
-                
-            </div>          
+            </div>
         </div>
     </div>
     <div class="footer">
@@ -366,5 +385,30 @@
     <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
     <!-- inject:js -->
     <!-- endinject -->
+    <!-- <script src="../libs/TAB.js"></script>
+    <script src="../libs/ajax.js"></script> -->
+    <script>
+        var obtn=$("#btn");
+        var oUsr=$("#usr");
+        var oPwd=$("#pwd");
+        obtn.onclick=function(){
+            var sUsr=oUsr.value;
+            var sPwd=oPwd.value;
+            ajaxPost("../php/register.php",`usr=${sUsr}&pwd=${sPwd}`)
+            .then(function(res){
+                var success=true;
+                console.log(res);
+                try{
+                    JSON.parse(res);
+                }catch(error){
+                    console.log(error);
+                    success=false;
+                }
+                if(success){
+                    location.href="login";
+                }
+            })
+        }
+    </script>
 </body>
 </html>
