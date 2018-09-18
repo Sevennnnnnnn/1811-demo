@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>注册</title>
+    <title id="title">注册</title>
     <!-- inject:css -->
     <link rel="stylesheet" href="/register/css/register.min.css">
     <!-- endinject -->
@@ -234,7 +234,7 @@
     <div class="contenter">
         <div class="content">
             <div class="con-left">
-                <form action="login.html">
+                <form action="../login/login.html">
                     <span>已是韩都衣舍用户：</span>
                     <button class="left-btn">直接登录</button>
                 </form>
@@ -247,54 +247,35 @@
             <div class="con-right">
                 <div class="c-r-top">
                     <div class="circle">1</div>
-                    <div class="tip">选择注册方式：</div>
+                    <div class="tip">设置您的性别：</div>
                     <div class="xuanxiang">
-                        <div class="phone">使用手机注册</div>
-                        <div class="email">使用邮箱注册</div>
+                        <div class="phone">男</div>
+                        <div class="email">女</div>
                     </div>                   
                 </div>
                 <div class="c-r-bot">
                     <form action="javascript:void(0)" class="phone-reg">
                         <div class="bot-title">
                             <div class="circle">2</div>
-                            <p class="tip1">填写您的信息：</p>
+                            <p class="tip1">开始您的注册：</p>
                         </div>                       
                         <label for="phonenum">您的手机号：</label>
                         <input type="text" id="usr" class="phonenum">
                         <input type="button" class="sent" value="发送验证码">
                         <br><label>请输入您在注册时使用的手机号码,若当前号码不用/丢失，或无法收到验证码?<a href="#">其他验证方式</a></label>
+                        <dd class="QQ" id="QQ">请输入正确手机号码</dd>
                         <br><label for="validate">验证码：</label>
-                        <input type="text" id="validate" class="validate">
+                        <input type="text" id="validate" class="validate"><dd id="WW" class="yz"></dd>
                         <br><label for="pwd">密码：</label>
-                        <input type="text" class="pwd" id="pwd">
+                        <input type="text" class="pwd" id="pwd"><dd id="EE">请输入正确格式</dd>
                         <br><label>6-16位字符，可使用字母、数字或符号的组合</label>
                         <br><label for="sure">确认密码：</label>
-                        <input type="text" class="sure" id="sure">
-                        <br><input type="checkbox" id="check" class="check">
+                        <input type="text" class="sure" id="sure"><dd id="RR">请再次输入密码，两次输入必须一致</dd>
+                        <br><input type="checkbox" id="check" checked="checked" class="check">
                         <label for="check">我已看过并接受<a href="#">《用户协议》</a></label>
-                        <br><button class="register-btn" id="btn">同意协议并注册</button>
+                        <br><button class="register-btn" id="WWWbtn">同意协议并注册</button>
                     </form>
-                    <form action="javascript:void(0)" class="email-reg">
-                        <div class="bot-title">
-                            <div class="circle">2</div>
-                            <p class="tip1">填写您的信息：</p>
-                        </div>                       
-                        <label for="phonenum">Email：</label>
-                        <input type="text" id="phonenum" class="phonenum">
-                        <br><label>Email地址作为用户名，同时也用于接收账户信息、订单通知及密码找回等功能</label>
-                        <br><label for="pwd">密码：</label>
-                        <input type="text" class="pwd" id="pwd">
-                        <br><label>8-24位字符，必须包含字母、数字的组合</label>
-                        <br><label for="sure">确认密码：</label>
-                        <input type="text" class="sure" id="sure">
-                        <br><label>请再次输入密码，两次输入必须一致</label>
-                        <br><label for="validate">验证码：</label>
-                        <input type="text" id="validate" class="validate">
-                        <span><img src="../images/valide.jpg" alt=""></span>
-                        <br><input type="checkbox" id="check" class="check">
-                        <label for="check">我已看过并接受<a href="#">《用户协议》</a></label>
-                        <br><button class="register-btn" id="register-btn">同意协议并注册</button>
-                    </form>
+                    
                 </div>
             </div>
         </div>
@@ -388,46 +369,113 @@
     <script src="/register/js/register.min.js"></script>
     <!-- endinject -->
     <script>
-        var oBtn = document.getElementById("btn");//DH提交按钮
+        var oBtn = document.getElementById("WWWbtn");//DH提交按钮
         var oUsr = document.getElementById("usr");//DH电话账号
         var oPwd = document.getElementById("pwd");//DH密码
         var oSure = document.getElementById("sure");//DH二次密码
         var oVal = document.getElementById("validate");//DH验证码
 
+        var Q = document.getElementById("QQ");
+        var W = document.getElementById("WW");
+        var E = document.getElementById("EE");
+        var R = document.getElementById("RR");
+
+
+        var flagName = null;
         oUsr.onblur = function(){
-            var reg =  /^1[35789]\d{9}$/;
+            var reg = /^1[35789]\d{9}$/;
             var str = this.value;
             if( reg.test(str) ){
-                alert("正确");
+                Q.style.display = "none";
                 flagName = true;
             }else{
-                alert("不正确");
+                Q.style.display = "block";
+                flagName = false;
             }
         }
 
+        var flagPwd = null;
         oPwd.onblur = function(){
-            var reg =  /^1[35789]\d{9}$/;
+            var reg = /^\w{6,16}$/;
             var str = this.value;
             if( reg.test(str) ){
-                alert("正确");
+                E.style.display = "none";
+                 flagPwd = true;
             }else{
-                alert("不正确");
+                E.style.display = "block";
+                 flagPwd = false;
             }
         }
 
+
+        var flagSure = null;
         oSure.onblur = function(){
+            var opo = oPwd.value;
             var str = this.value;
-            
-            if( str == oPwd.value ){
-                alert("正确");;
+            if(str == opo){
+                R.style.display = "none";
+                flagSure = true;
             }else{
-                alert("不正确");
+                R.style.display = "block";
+                flagSure = false;
             }
+            
         }
 
 
+        var CH = document.getElementById("check");
+        var flagChecked = true;
+        CH.onclick = function(){
+            if ( CH.checked ){
+                 flagChecked = true;
+                }else{
+                 flagChecked = false;
+                }    
+        }
+      
+    W.innerHTML = haha()
+       function haha (){
+            var str = "0123456789";
+            //从字符串中随机取出4个字符 进行拼接
+            //下标范围 ： 0--9
+            var sum = "";
+            for( var i = 1 ; i <= 4 ; i++ ){
+                sum += str.charAt( Math.round( Math.random()*9 ) );//根据随机下标得到对应的字符
+             }
+            return sum;
+         
+        }
+      var mm =  W.innerHTML;
+      
+      
         oBtn.onclick = function(){
+            var bb = oVal.value;
+            if( flagName&&flagSure&&flagPwd&&flagChecked&&mm==bb){
+                var strName = oUsr.value;
+                var strPwd = oPwd.value;
+                console.log(strName,strPwd)
+                //存用户名
+                document.cookie = "username"+"="+strName+"; path=/";
+                //存密码
+                document.cookie = "userpwd"+"="+strPwd+"; path=/";
 
+                alert("注册成功");
+		        location.href = "../login/login.html";
+            }else{
+                if(mm!=bb){
+                    alert("验证码错误")
+                }else if(flagName==false){
+                    alert("手机号错误")
+                }else if(flagPwd==false){
+                    alert("密码格式错误")
+                }else if(flagSure==false){
+                    alert("两次输入密码不一致")
+                }else if(flagChecked==false){
+                    alert("请阅读并接受用户协议")
+                }
+                
+            }
+            
         }
     </script>
 </body>
